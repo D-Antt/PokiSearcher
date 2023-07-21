@@ -12,9 +12,46 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    border: red 2px dotted;
+}
+
+#pokemonInput {
+    margin-right: 10px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #3b4cca;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#pokemonInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 50vh;
+    }
+    
 }
 
 header {

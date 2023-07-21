@@ -11,10 +11,12 @@
         <header>
             <h1 class="title">Ultimate Pokédex</h1>
         </header>
-        <input type="text" id="pokemon-input" placeholder="Enter Pokémon name or ID">
-        <button onclick="getPokemon()">Search</button>
-        <button onclick="getRandomPokemon()">Shuffle</button>
-        <div id="pokemon-info">
+        <div id="buttonContainer">
+            <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
+            <button onclick="getPokemon()">Search</button>
+            <button onclick="getRandomPokemon()">Shuffle</button>
+        </div>
+        <div id="pokemonInfo">
             <h2 id="pokemon-name"></h2>
             <img id="pokemon-image" src="" alt="Pokemon image">
             <p id="pokemon-base-experience"></p>
