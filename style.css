@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8d030; /* A bright yellow color, reminiscent of Pikachu */
+}
+
+.title {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 3em; /* Adjust as needed */
+    text-align: center;
+    color: #3b4cca; /* A deep blue color for contrast */
+}

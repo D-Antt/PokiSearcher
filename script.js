@@ -6,7 +6,7 @@ function getPokemon(nameOrId) {
   }
   
   function getRandomPokemon() {
-    const maxPokemonId = 898;  // As of my knowledge cutoff in September 2021, there are 898 Pokemon.
+    const maxPokemonId = 1008; //some still don't have photos
     const randomId = Math.floor(Math.random() * maxPokemonId) + 1;
     getPokemon(randomId);
   }
