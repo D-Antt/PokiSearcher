@@ -22,7 +22,9 @@ body {
     justify-content: center;
     align-items:center;
     padding: 20px;
-    border: red 2px dotted;
+    background: linear-gradient(to right,  rgb(243, 243, 167), #f8d030, rgb(243, 243, 167));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 #pokemonInput {
@@ -50,6 +52,7 @@ button:hover {
     align-items: center;
     padding: 20px;
     min-height: 50vh;
+    background: linear-gradient(to right, #f8d030, rgb(243, 243, 167), #f8d030);
     }
     
 
@@ -59,7 +62,7 @@ header {
     align-items: center;
     max-width: 100%;
     padding: 20px;
-    background-color: #f8d030;
+    background: linear-gradient(to right, #f8d030, rgb(243, 243, 167), #f8d030);
 }
 
 .title {
