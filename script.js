@@ -34,4 +34,16 @@ function updatePage(data) {
 
   }
 
+  fetch('https://pokeapi.co/api/v2/pokemon?limit=1200')
+    .then(response => response.json())
+    .then(data => {
+        const dataList = document.getElementById('pokemonNames');
+        for (let i = 0; i < data.results.length; i++) {
+            const option = document.createElement('option');
+            option.value = data.results[i].name;
+            dataList.appendChild(option);
+        }
+    });
+
+
   getPokemon('pikachu');
