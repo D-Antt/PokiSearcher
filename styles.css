@@ -52,13 +52,12 @@ button:hover {
     min-height: 50vh;
     }
     
-}
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
     background-color: #f8d030;
 }

@@ -1,3 +1,4 @@
+
 function getPokemon(nameOrId) {
     fetch('https://pokeapi.co/api/v2/pokemon/' + nameOrId)
       .then(response => response.json())
@@ -5,18 +6,20 @@ function getPokemon(nameOrId) {
       .catch(error => console.error('Error:', error));
   }
   
-  function getRandomPokemon() {
+function getRandomPokemon() {
     const maxPokemonId = 1008; //some still don't have photos
     const randomId = Math.floor(Math.random() * maxPokemonId) + 1;
     getPokemon(randomId);
   }
   
-  function updatePage(data) {
-    document.getElementById('pokemon-name').textContent = data.name;
-    document.getElementById('pokemon-image').src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/' + data.id + '.svg';
-    document.getElementById('pokemon-base-experience').textContent = 'Base Experience: ' + data.base_experience;
-    document.getElementById('pokemon-height').textContent = 'Height: ' + data.height;
-    document.getElementById('pokemon-order').textContent = 'Order: ' + data.order;
-    document.getElementById('pokemon-weight').textContent = 'Weight: ' + data.weight;
-    document.getElementById('pokemon-abilities').textContent = 'Abilities: ' + data.abilities.map(ability => ability.ability.name).join(', ');
+function updatePage(data) {
+    document.getElementById('pokemonName').textContent = data.name;
+    document.getElementById('pokemonImage').src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/' + data.id + '.svg';
+    document.getElementById('pokemonBaseExperience').textContent = 'Base Experience: ' + data.base_experience;
+    document.getElementById('pokemonHeight').textContent = 'Height: ' + data.height;
+    document.getElementById('pokemonOrder').textContent = 'Order: ' + data.order;
+    document.getElementById('pokemonWeight').textContent = 'Weight: ' + data.weight;
+    document.getElementById('pokemonAbilities').textContent = 'Abilities: ' + data.abilities.map(ability => ability.ability.name).join(', ');
   }
+
+  getPokemon('pikachu');
