@@ -12,6 +12,16 @@ document.getElementById('pokemonInput').addEventListener('keypress', function (e
         getPokemon(document.getElementById('pokemonInput').value);
     }
 });  
+
+document.getElementById('pokemonImage').addEventListener('mouseenter', function () {
+  this.classList.add('move');
+
+  // Remove the 'move' class after 2 seconds
+  setTimeout(() => {
+      this.classList.remove('move');
+  }, 2000);
+});
+
   
 function getRandomPokemon() {
     const maxPokemonId = 1008;

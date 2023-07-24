@@ -11,8 +11,20 @@
     }
 }
 
+.move {
+    position: absolute;
+    animation: move 0.5s forwards;
+}
+
+@keyframes move {
+    100% { 
+        transform: translateX(100vw);
+    }
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pacifico', cursive;
     margin: 0;
     padding: 0;
 }
