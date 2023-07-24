@@ -4,9 +4,10 @@ function getPokemon(nameOrId) {
       .then(response => response.json())
       .then(data => updatePage(data))
       .catch(error => console.error('Error:', error));
+      document.getElementById('pokemonInput').value = '';
   }
 
-  document.getElementById('pokemonInput').addEventListener('keypress', function (e) {
+document.getElementById('pokemonInput').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         getPokemon(document.getElementById('pokemonInput').value);
     }
