@@ -12,7 +12,9 @@
             <h1 class="title">Ultimate Pokédex</h1>
         </header>
         <div id="buttonContainer">
-            <input list="pokemonNames" type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID"><datalist id="pokemonNames"></datalist>
+            <input list="pokemonNames" type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
+            <datalist id="pokemonNames">
+            </datalist>
             <button onclick="getPokemon(document.getElementById('pokemonInput').value)">Search</button>
 
             <button onclick="getRandomPokemon()">Shuffle</button>

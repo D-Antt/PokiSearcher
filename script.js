@@ -5,6 +5,12 @@ function getPokemon(nameOrId) {
       .then(data => updatePage(data))
       .catch(error => console.error('Error:', error));
   }
+
+  document.getElementById('pokemonInput').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        getPokemon(document.getElementById('pokemonInput').value);
+    }
+});  
   
 function getRandomPokemon() {
     const maxPokemonId = 1008;
