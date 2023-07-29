@@ -37,7 +37,6 @@ function updatePage(data) {
   } else {
     document.getElementById('pokemonImage').src = 'path/to/default/image.png';
   }
-
   document.getElementById('pokemonBaseExperience').textContent = 'Base Experience: ' + data.base_experience;
   document.getElementById('pokemonHeight').textContent = 'Height: ' + data.height;
   document.getElementById('pokemonOrder').textContent = 'Order: ' + data.order;
